@@ -1,0 +1,63 @@
+$global-color1: #030305;
+$global-color2: #EFB730;
+$global-color3: #C2E3F4;
+$global-color4: #F2F4EF;
+$global-color5: #0000ff;
+$global-color6: #006666;
+$global-color7: rgb(255, 0, 0);
+
+$font-family1: 'Oswald', sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-family2: 'Khand', sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+html body{
+    // border: 1px solid red;
+    width: 798px;
+    min-width:798px;
+    height: 598px;
+    margin: 0;
+    padding: 0;
+    font-family: $font-family1; 
+}
+.container{
+    display:flex;
+    height:600px;
+    flex-direction:row;
+    text-align: center;
+    h1{
+        margin: 10px auto auto 10px;
+        padding:0; 
+        color: black;
+        font-size: 50px;
+    }
+    
+    .left{
+        // border-right: 5px solid $global-color2;
+        width: 400px;
+        .left-post{
+            // border: 1px solid blue;
+            width:100%;
+            margin:auto;
+        }
+        img{
+            border: 5px solid blue;
+            border-radius: 10px;
+            width:350px;
+            height:450px;
+        }
+    }
+    .right{
+        // border: 1px solid red;
+        width: 400px;
+        .right-post{
+            // border: 1px solid blue;
+            width:100%;
+            margin:auto;
+        }
+        img{
+            border: 5px solid red;
+            border-radius: 10px;
+            width:350px;
+            height:450px;
+        }
+    }
+}

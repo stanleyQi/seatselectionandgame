@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Khand|Oswald" rel="stylesheet"> 
+    <link rel="stylesheet" href="./js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./js/bootstrap/css/datepicker.css">
+    <script src="./js/bootstrap/js/jquery.js"></script>
+    <script src="./js/bootstrap/js/bootstrap-datepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/jq22.css" />
+    <link rel="stylesheet" href="./css/bookingtickets.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="movie-selection">
+            <div class="date">
+                <span>Date:</span><input type="text" value="15/04/2019" data-date-format="dd/mm/yyyy" id="datepicker" class="datepicker">
+            </div>
+            <div class="room">
+                <span>Room:</span><div class="puru active">Puru</div><div class="whero">Whero</div>
+            </div>
+            <div class="time">
+                <p class="sessionP active-session" id="session1">10:00-12:30</p>
+                <p class="sessionP" id="session2">13:00-15:30</p>
+                <p class="sessionP" id="session3">16:00-18:30</p>
+                <p class="sessionP" id="session4">19:00-21:30</p>
+            </div>
+        </div>
+        <div class="movie-detail">
+            <div class="movie-show"></div>
+        </div>
+
+
+        <!-- start -->
+        <div class="seat-selection">
+            <div id="seat_area">
+            </div>
+        </div>
+        <!-- end -->
+        
+        <div class="summary">
+            <div class="booking_area">
+                <p>MOVIE<br><span id="moviename" style="font-size:25px;font-weight: bolder;"></span></p>
+                <br>
+                <p>TIME<br><span id="datetime"></span></p>
+                <br>
+                <p>ROOM:<span id="roomInfo">Puru</span></p>
+                <br>
+                <p>SEATS</p>
+                <div style="border:1px solid black;border-radius:10px;overflow-y: scroll;overflow-x:hidden">
+                    <ul id="seats_chose"></ul>
+                </div>
+                <p>COUNT:   <span id="tickects_num">0</span></p>
+                <p>TOTAL:   <b>$  <span id="total_price">0</span></b></p>
+                <div class="btnConfirm">Comfirm</div>
+            </div>
+        </div>
+    </div>
+    <div class="mask">
+        <div class="summary-confirmation">
+            <div>Movie: <p id="moviemask"></p></div>
+            <div>Time: <p id="timemask"></p></div>
+            <div>Room: <p id="roommask"></p></div>
+            <div>Seats: <p id="seatsmask"></p></div>
+            <div>Count: <p id="countmask"></p></div>
+            <div>Total: <p id="totalmask"></p></div>
+            <div class="message"><h1>Booked successfully.</h1></div>
+        </div>
+        <div class="btnArea">
+            <div class="btnMask" id="btnMaskConfirm">Confirm</div>
+            <div class="btnMask" id="btnMaskModify">Modify</div>
+        </div>
+        
+    </div>
+    <script src="js/store.legacy.min.js"></script>
+    <script type="text/javascript" src="js/jquery.seat-charts.min.js"></script>
+    <script src="js/bookingtickets.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link rel="stylesheet" href="./css/game.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="divPanel">
+            <p><span class="namePanel" id="namePanel">Mr.K</span></p>
+            <p>Points: <span class="scorePanel">0</span></p>
+            <p>CountDown: <span class="countdownPanel">00:00</span><p>
+        </div>
+        <div class="divRestart">Restart</div>
+        <div class="divStop">Stop</div>
+        <canvas class="game-background" width="800" height="600">This borwser does not support the canvas.</canvas>
+        <canvas class="game-apples" width="800" height="600">This borwser does not support the canvas.</canvas>
+        <canvas class="game-character" width="800" height="600">This borwser does not support the canvas.</canvas>
+        <canvas class="game-score" width="800" height="600">This borwser does not support the canvas.</canvas>
+    </div>
+    <script src=".././game/js/store.legacy.min.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/apples.js"></script>
+    <script src="js/character.js"></script>
+    <script src="js/score.js"></script>
+    <script src="js/contral.js"></script>
+</body>
+</html>

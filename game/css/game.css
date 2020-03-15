@@ -1,0 +1,96 @@
+:root {
+    --global-color1: #030305;
+    --global-color2: #EFB730;
+    --global-color3: #C2E3F4;
+    --global-color4: #F2F4EF;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div.game-container{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 600px;
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+.game-background{
+    z-index: -1;
+}
+.game-apples{
+    z-index: 1;
+}
+.game-character{
+    z-index: 2;
+}
+.game-score{
+    z-index: 3;
+}
+div.divRestart{
+    z-index: 99;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border: 5px solid var(--global-color2);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+div.divRestart:hover{
+    background-color: var(--global-color2);
+}
+div.divStop{
+    z-index: 99;
+    position: absolute;
+    right: 30px;
+    top: 60px;
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border: 5px solid var(--global-color2);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+div.divStop:hover{
+    background-color: var(--global-color2);
+}
+div.divPanel{
+    z-index: 98;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 400px;
+    height: 30px;
+    background-color: transparent;
+    
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+    color:var(--global-color1);
+}
+.namePanel{
+    font-size: 40px;
+    color:var(--global-color1);
+}
+.scorePanel{
+    font-size: 40px;
+    color:var(--global-color1);
+}
+.countdownPanel{
+    font-size: 40px;
+    color: var(--global-color1);
+}

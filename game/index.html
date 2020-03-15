@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="name">
+            <span>Name:</span>
+            <input type="text" id="inputName" class="inputName" value="Mr.K">
+        </div>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="7" value="5" class="slider" id="myRange">
+            <p><span id="demo"></span> minutes</p>
+        </div>
+        <div class="volumecontainer">
+            <input type="range" min="0" max="100" value="50" class="slider" id="myVolume">
+            <p>Volume: <span id="demoVolume"></span></p>
+        </div>
+    <div class="divStart">Start</div>
+    </div>
+    <script src=".././game/js/store.legacy.min.js"></script>
+    <script src=".././game/js/index.js"></script>
+</body>
+</html>

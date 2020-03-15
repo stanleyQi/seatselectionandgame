@@ -1,0 +1,71 @@
+:root {
+    --global-color1: #030305;
+    --global-color2: #EFB730;
+    --global-color3: #C2E3F4;
+    --global-color4: #F2F4EF;
+
+    --font-family1:'Luckiest Guy', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-family2:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family1);
+    text-align: center;
+    padding-top:20px;
+}
+div.scoreranking{
+    border: 5px solid var(--global-color2);
+    border-radius: 10px;
+    margin-top:50px;
+    width: 300px;
+    height: 500px;
+    margin: auto;
+}
+div h1{
+    margin:10px;
+    border-bottom: 5px solid var(--global-color2);
+
+}
+.rows{
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height:380px;
+    height:380px;
+}
+.row:nth-child(1){
+    color:green;
+    font-size: 200%;
+}
+.row{
+    display:grid;
+    grid-template-columns: 20% 50% 30%;
+}
+.row span{
+    display: inline-block;
+}
+.row .ranking{
+    
+}
+.row .name{
+    text-align: left;
+    overflow: hidden;
+}
+.row .score{
+
+}
+
+div.divRestart{
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border: 5px solid var(--global-color2);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    margin: auto;
+}
+div.divRestart:hover{
+    background-color: var(--global-color2);
+}
